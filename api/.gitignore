@@ -1,0 +1,51 @@
+﻿# Игнорировать файлы сборки и запуска
+bin/
+obj/
+[Bb]uild/
+[Tt]est[Rr]esult*/
+*.user
+*.suo
+*.userprefs
+*.lock.json
+
+# Игнорировать файлы IDE
+.vs/
+.idea/
+*.swp
+*.swo
+
+# Игнорировать пакеты NuGet
+**/[Pp]ackages/*
+!**/[Pp]ackages/repositories.config
+.nuget/
+*.nupkg
+NuGet.exe
+
+# Игнорировать временные файлы
+_ReSharper.*
+*.log
+*.cache
+*.pidb
+*.ilk
+*.pdb
+
+# Игнорировать выходные файлы публикации
+publish/
+out/
+
+# Игнорировать локальные настройки
+*.local.*
+appsettings.Development.json
+launchSettings.json
+
+# Игнорировать пользовательские файлы
+.DS_Store
+Thumbs.db
+
+# Игнорировать тестовые результаты
+TestResults/
+*.trx
+
+# Игнорировать файлы Rider
+.idea/
+*.sln.iml

@@ -43,13 +43,12 @@ services:
 
   reports-api:
     build:
-      context: ./Reports
+      context: ./api
       dockerfile: Dockerfile
     environment:
       - Keycloak__Authority=http://keycloak:8080/realms/reports-realm
       - Keycloak__Issuer=http://localhost:8080/realms/reports-realm
-      - Keycloak__Audience=reports-api
-      
+      - Keycloak__Audience=reports-api      
     ports:
       - "8000:8080"
     depends_on:
